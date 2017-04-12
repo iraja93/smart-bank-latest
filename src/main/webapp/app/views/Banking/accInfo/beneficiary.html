@@ -1,0 +1,29 @@
+<div class="panel panel-bank">
+    <div class="panel-heading">
+        <h3 class="panel-title">Add Beneficiary</h3>
+    </div>
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+            <form>
+                <h5>Beneficiary Name</h5>
+                <input class="form-control" type="text" ng-model="vm.payee.displayName">
+                <h5>Account No.</h5>
+                <input class="form-control" type="number" ng-model="vm.payee.accountId">
+           
+                <h5>IFSC Code</h5>
+                <input type="text" class="form-control" >
+            </div>
+            <div class="col-md-12 center-align">
+                <button type="submit" class="btn rb-btn " ng-click="vm.addBenef()">Submit</button>
+            </div>
+            </form>
+            
+            
+        </div>
+    </div>
+    <div ng-show="vm.visible" class="alert alert-success">
+  <strong>Success!</strong> Payee Added.
+</div>
+
+</div>

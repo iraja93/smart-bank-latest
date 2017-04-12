@@ -1,0 +1,94 @@
+<div class="panel panel-bank">
+    <div class="panel-heading">
+        <h3 class="panel-title">Fund Transfer</h3>
+    </div>
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <h5>Account No.</h5>
+              <!--  <input class="form-control" type="text">-->
+              <form>
+              
+              <select class="form-control" ng-options="benef.accountId for benef in vm.beneficiary" ng-model="benef.accountId"></select>
+                <h5>Amount</h5>
+                <input type="text" class="form-control" ng-model="vm.fundT.amount">
+            </div>
+                <div class="col-md-12 center-align">
+                    <button type="submit" class="btn rb-btn" ng-click="vm.send(benef.accountId,vm.fundT.amount)">Submit</button>
+                </div>
+              
+              </form>
+                
+        </div>
+    </div>
+    <div ng-show="vm.visibleFund" class="alert alert-success">
+  <strong>Success!</strong> Fund Transferred to Account No {{vm.fundT.receiverId}} Successfully.
+</div>
+
+</div>
+
+<div class="col-md-12">
+    <h1 class="text-center">
+       Existing  Beneficiary 
+    </h1>
+</div>
+
+<table class="table table-bordered table-hover table-condensed">
+    <tr>
+    	<th>Payee Id</th>
+        <th>Beneficiary Name</th>
+        <th>Account No</th>
+        <th>Action</th>
+        <!-- <th colspan="2">IFSC code</th> -->
+    </tr>
+    <tr ng-repeat="benef in vm.beneficiary">
+    	 <td  style ="word-break:break-word;" ng-model="benef.id">{{benef.id}}</td>
+        <td  style ="word-break:break-word;">{{benef.displayName}}</td>
+        <td  style ="word-break:break-word;" ng-model="benef.accountId"> {{benef.accountId}}</td>
+       <!--  <td  >{{benef.ifscCode}}</td> -->
+        <td  style ="word-break:break-word;"> 
+            <a ng-click="vm.deletePayee(benef.id,benef.accountId)" class="trash"><span class="glyphicon glyphicon-trash"></span></a>
+           </td>
+    </tr>
+</table>
+
+<!-- 
+
+<div class="col-md-12">
+    <h1 class="text-center">
+    Beneficiary Details
+    </h1> </div>
+<div id="no-more-tables">
+    <table class="col-md-12 col-sm-12 col-xs-12 table-bordered table-striped table-condensed cf">
+        <thead class="cf">
+        <tr>
+            <th>Name</th>
+            <th>Id</th>
+            <th>IFSC</th>
+         
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="bill in vm.bills">
+            <td data-title="Name">{{benef.payeeName}}</td>
+            <td data-title="Id"  ng-model="benef.payeeAccNo">{{benef.payeeAccNo}}</td>
+            <td data-title="IFSC">{{benef.ifscCode}}</td>
+           <td> 
+            <a ng-click="vm.deletePayee(benef.payeeAccNo)" class="trash"><span class="glyphicon glyphicon-trash"></span></a>
+           </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+ -->
+
+
+
+
+
+
+
+
+
+
+

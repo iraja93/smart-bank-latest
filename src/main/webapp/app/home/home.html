@@ -1,0 +1,47 @@
+<div class="well" ng-cloak>
+    <div class="row">
+        <div class="col-md-3">
+            <div class="sidebar">
+                <div class="tab">
+
+                    <a class="tablinks " ui-sref="home.accInfo" ng-class="{'tablinks-focus':(vm.$state.includes('home.accInfo'))}"><span class="glyphicon glyphicon-info-sign glyphy"></span>Account Summery</a>
+                    <a ui-sref="home.transac" class="tablinks" ng-class="{'tablinks-focus':(vm.$state.includes('home.transac'))}"><span class="glyphicon glyphicon-share-alt glyphy"></span>Transaction History</a>
+                    <a ui-sref="home.beneficiary" class="tablinks" ng-class="{'tablinks-focus':(vm.$state.includes('home.beneficiary'))}"><span class="    glyphicon glyphicon-plus-sign glyphy"></span>Add Beneficiary</a>
+                    <a ui-sref="home.fundTx" class="tablinks" ng-class="{'tablinks-focus':(vm.$state.includes('home.fundTx'))}"> <span class="glyphicon glyphicon-export glyphy"></span>Fund Transfer</a>
+                    <a ui-sref="home.bills" class="tablinks" ng-class="{'tablinks-focus':(vm.$state.includes('home.bills'))}"><span class="glyphicon glyphicon-list-alt glyphy"></span>Bills</a>
+                    <a ui-sref="home.creditcard " class="tablinks" ng-class="{'tablinks-focus':(vm.$state.includes('home.creditcard'))}"><span class="glyphicon glyphicon-credit-card glyphy"></span>Card Details</a>
+                    <a ui-sref="home.profile " class="tablinks" ng-class="{'tablinks-focus':(vm.$state.includes('home.profile'))}"><span class="glyphicon glyphicon-user glyphy"></span>My Profile</a>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-9" ui-view>
+
+        </div>
+    </div>
+
+
+</div>
+
+<!--<div class="well" ng-cloak>
+    <div class="row">
+        <div class="col-md-3">
+            <div class="sidebar">
+                <div class="barclays-default-nav" ng-class="{'barclays-active-nav':(vm.$state.includes('home.accInfo'))}" >
+
+                    <a ui-sref="home.accInfo"><span class="glyphicon glyphicon-info-sign glyphy"></span>Account Summery</a>
+
+                </div>
+                <div class="barclays-default-nav" ng-class="{'barclays-active-nav':(vm.$state.includes('home.transac'))}">
+                    <a ui-sref="home.transac"><span class="glyphicon glyphicon-share-alt glyphy"></span>Transaction History</a>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-9" ui-view>
+
+        </div>
+    </div>
+
+
+</div>-->

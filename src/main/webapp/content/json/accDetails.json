@@ -1,0 +1,19 @@
+{
+    "customer": {
+        "name": "amruta dhabale",
+        "address": "23 B,Link road",
+        "city": "Chinchwad",
+        "state": "Maharashtra",
+        "zip": "411033",
+        "country": "India",
+        "dob": "10.11.92",
+        "email": "amrutad@gmail.com",
+        "phone": "9876543210",
+        "PAN":"BBPP342568"
+    },
+    "account": {
+        "accType": "saving",
+        "accNo": "54432567237",
+        "amount":"537737"
+    }
+}

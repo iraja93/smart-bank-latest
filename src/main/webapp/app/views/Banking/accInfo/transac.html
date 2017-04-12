@@ -1,0 +1,26 @@
+
+    <div class="col-md-12">
+        <h1 class="text-center">
+            Transaction Details
+        </h1> </div>
+    <div id="no-more-tables">
+        <table class="col-md-12 col-sm-12 col-xs-12 table-bordered table-striped table-condensed cf">
+            <thead class="cf">
+            <tr>
+                <th>Trans ID</th>
+				<th>Date</th>
+                <th>Description</th>
+                <th>Amount</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="transac in vm.transacs">
+                <td data-title="Trans ID">{{transac.id}}</td>
+            <td data-title="Date">{{transac.dot}}</td> 
+                <td data-title="Type">{{transac.details}}</td>
+                <td data-title="Amount">${{transac.amount}}</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+

@@ -1,0 +1,38 @@
+[
+{
+    "transactionId": "1",
+    "date": "10/12/2017",
+    "transactionType": "credit",
+    "amount": "1000"
+},
+{
+"transactionId": "2",
+"date": "10/12/2017",
+"transactionType": "credit",
+"amount": "1000"
+},
+    {
+        "transactionId": "3",
+        "date": "10/12/2017",
+        "transactionType": "credit",
+        "amount": "1000"
+    },
+    {
+        "transactionId": "4",
+        "date": "10/12/2017",
+        "transactionType": "credit",
+        "amount": "1000"
+    },
+    {
+        "transactionId": "5",
+        "date": "10/12/2017",
+        "transactionType": "credit",
+        "amount": "1000"
+    },
+    {
+        "transactionId": "6",
+        "date": "10/12/2017",
+        "transactionType": "credit",
+        "amount": "1000"
+    }
+]

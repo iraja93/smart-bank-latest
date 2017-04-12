@@ -1,0 +1,298 @@
+/*!
+ * Your CSS files will be generated in this directory by "gulp sass"
+ */
+/*
+.navbar{
+     background: #1a2225!important;
+}
+.navbar-brand img {
+    height: 42px
+
+}
+.navbar, .navbar.navbar-default {
+    border-bottom: 3px solid #1a2225;
+    background-color: #fff;
+    color: #00a0d7;
+}
+.navbar .navbar-nav > .active > a, .navbar .navbar-nav > .active > a:hover, .navbar .navbar-nav > .active > a:focus {
+    color: #ffffff;
+    background-color: #00a0d7;
+}
+.navbar .dropdown-menu .active > a, .navbar.navbar-default .dropdown-menu .active > a {
+    color: #00a0d7;
+}
+.navbar .dropdown-menu .active > a:hover, .navbar.navbar-default .dropdown-menu .active > a:hover, .navbar .dropdown-menu .active > a:focus, .navbar.navbar-default .dropdown-menu .active > a:focus {
+    color: #00a0d7;
+}
+.navbar .dropdown-menu li > a:hover, .navbar.navbar-default .dropdown-menu li > a:hover, .navbar .dropdown-menu li > a:focus, .navbar.navbar-default .dropdown-menu li > a:focus {
+    color: #00a0d7;
+}
+
+*/
+
+/*=================================================axa==================================================*/
+
+.sidebar {
+    /*
+    #F2F2F2;*/
+
+    height: 100%;
+    /*padding-bottom: calc(100vh - 200px);*/
+    box-shadow: 0 4px 4px 1px gray;
+}
+
+
+.sidebar a {
+    /*padding: 8px 2px 8px 8px;*/
+    text-decoration: none;
+    font-size: 15px;
+    color: #ffffff;
+    display: block;
+    font-weight: 500;
+}
+
+.tablinks{
+    text-align: left;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 14px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* Safari 4-5, Chrome 1-9 */
+    /* Can't specify a percentage size? Laaaaaame. */
+   background-color: #03A9F4;
+    border: 1px solid #1CB1F5;
+}
+
+.glyphy{
+    padding: 7px;
+}
+/* Change background color of links on hover */
+
+.tablinks:hover {
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* Safari 4-5, Chrome 1-9 */
+    /* Can't specify a percentage size? Laaaaaame. */
+    background-color: #60c8f8;
+    border: 1px solid #60c8f8;
+}
+
+
+
+.tablinks-focus {
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* Safari 4-5, Chrome 1-9 */
+    /* Can't specify a percentage size? Laaaaaame. */
+    background-color: #1a2225;
+    border: 1px solid #1a2225;
+}
+.tablinks-focus:hover{
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* Safari 4-5, Chrome 1-9 */
+    /* Can't specify a percentage size? Laaaaaame. */
+    background-color: #1a2225;
+    border: 1px solid #1a2225;
+}
+.bank{
+    margin-top: 20px;
+}
+
+
+.barclays-default-nav{
+    background-color: #0093CF;
+    color: #fff !important;
+}
+
+
+
+.barclays-active-nav{
+    background-color: red!important;
+    color: #004562 !important;
+}
+
+
+
+/*==========================================================================================*/
+.panel.panel-bank > .panel-heading {
+    background-color: #1a2225!important;
+    color: #ffffff;
+}
+.center-element{
+    margin:0px auto;
+}
+
+.center-align{
+    text-align:center;
+}
+.bank-margin{
+    margin-top: 70px;
+}
+/*==========================================================================*/
+
+.lib-panel {
+    margin-bottom: 20Px;
+}
+.lib-panel img {
+    width: 100%;
+    background-color: transparent;
+}
+
+.lib-panel .row,
+.lib-panel .col-md-6 {
+    padding: 0;
+    background-color: #FFFFFF;
+}
+
+
+.lib-panel .lib-row {
+    padding: 0 20px 0 20px;
+}
+
+.lib-panel .lib-row.lib-header {
+    background-color: #FFFFFF;
+    font-size: 20px;
+    padding: 10px 20px 0 20px;
+}
+
+.lib-panel .lib-row.lib-header .lib-header-seperator {
+    height: 2px;
+    width: 26px;
+    background-color: #d9d9d9;
+    margin: 7px 0 7px 0;
+}
+
+.lib-panel .lib-row.lib-desc {
+    position: relative;
+    height: 100%;
+    display: block;
+    font-size: 13px;
+}
+.lib-panel .lib-row.lib-desc a{
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    left: 20px;
+}
+
+.row-margin-bottom {
+    margin-bottom: 20px;
+}
+
+.box-shadow {
+    -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,.10);
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.10);
+}
+
+.no-padding {
+    padding: 0;
+}
+.pic{
+    background: url("http://placehold.it/500x600");
+}
+/*=================================================================================*/
+.card {
+    font-size: 1em;
+    overflow: hidden;
+    padding: 0;
+    border: none;
+    border-radius: .28571429rem;
+    box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+}
+
+.card-block {
+    font-size: 1em;
+    position: relative;
+    margin: 0;
+    padding: 1em;
+    border: none;
+    border-top: 1px solid rgba(34, 36, 38, .1);
+    box-shadow: none;
+}
+
+.card-img-top {
+    display: block;
+    width: 100%;
+    height: auto;
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+}
+
+.card {
+    padding: 5px;
+}
+
+.card-img-top:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+
+.home-h5{
+
+    font-size: 1.28571429em;
+    font-weight: 700;
+    line-height: 1.2857em;
+    margin: 0;
+
+}
+.rb-btn{
+    background-color:#03A9F4;
+    color:#fff !important;
+}
+.btn:not(.btn-raised):not(.btn-link):hover, .input-group-btn .btn:not(.btn-raised):not(.btn-link):hover, .btn:not(.btn-raised):not(.btn-link):focus, .input-group-btn .btn:not(.btn-raised):not(.btn-link):focus{
+    background-color:#03A9F4!important;
+    color:#fff !important;
+}
+/*====================================================================================================*/
+@media only screen and (max-width: 800px) {
+
+    /* Force table to not be like tables anymore */
+    #no-more-tables table,
+    #no-more-tables thead,
+    #no-more-tables tbody,
+    #no-more-tables th,
+    #no-more-tables td,
+    #no-more-tables tr {
+        display: block;
+    }
+
+    /* Hide table headers (but not display: none;, for accessibility) */
+    #no-more-tables thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    #no-more-tables tr { border: 1px solid #ccc; }
+
+    #no-more-tables td {
+        /* Behave  like a "row" */
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+        white-space: normal;
+        text-align:left;
+    }
+
+    #no-more-tables td:before {
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 6px;
+        left: 6px;
+        width: 110%;
+        padding-right: 10px;
+        white-space: nowrap;
+        text-align:left;
+        font-weight: bold;
+    }
+
+    /*
+    Label the data
+    */
+    #no-more-tables td:before { content: attr(data-title); }
+}

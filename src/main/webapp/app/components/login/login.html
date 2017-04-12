@@ -1,0 +1,50 @@
+
+<div class="row bank-margin" >
+    <div class="col-md-12">
+        <div class="col-md-4 well col-md-offset-4">
+            <div><img src="../../../content/images/capg_logo.png" class="img-responsive center-element"/></div>
+
+            <div class="alert alert-danger" ng-show="vm.authenticationError">
+                <strong>Failed to sign in!</strong> Please check your credentials and try again.
+            </div>
+            <form class="form" role="form" ng-submit="vm.login($event)">
+                <div class="form-group">
+
+                    <div class="col-md-12">
+                        <label for="username" class="control-label label-discover">Login</label>
+                        <input type="text" class="form-control" id="username" placeholder="Your Username" ng-model="vm.username">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-12">
+                        <label for="password" class="control-label label-discover">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="Your Password"
+                               ng-model="vm.password">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-12">
+                        <label for="rememberMe">
+                            <input type="checkbox" id="rememberMe" ng-model="vm.rememberMe" checked>
+                            <label class="control-label label-discover">Remember me</label>
+                        </label>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <button type="submit" class="btn btn-login rb-btn">Sign in</button>
+                </div>
+
+            </form>
+            <div class="col-md-12">
+                <div class="center-align">
+                    <a class="alert-link link-axa" href="" ng-click="vm.requestResetPassword()">Did you forget your password?</a>
+                </div>
+                <div class=" center-align">
+                    Not Registered? <a class="alert-link link-axa" href="" ng-click="vm.register()">Register a new account</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

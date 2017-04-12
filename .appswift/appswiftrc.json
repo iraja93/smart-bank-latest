@@ -1,0 +1,10 @@
+{
+    "appswift": {
+        "continueTheming": true,
+        "shouldCommitCode": true,
+        "scmType": "git",
+        "scmUserName": "kkorada",
+        "scmPwd": "India@123",
+        "scmUrl": "http://10.102.22.61:9292/adc-public/smartbanking.git"
+    }
+}

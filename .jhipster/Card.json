@@ -1,0 +1,48 @@
+{
+  "relationships": [
+    {
+      "relationshipId": 1,
+      "relationshipName": "bill",
+      "otherEntityName": "bill",
+      "relationshipType": "one-to-many",
+      "otherEntityRelationshipName": "card"
+    },
+    {
+      "relationshipId": 2,
+      "relationshipName": "user",
+      "otherEntityName": "user",
+      "relationshipType": "many-to-one",
+      "otherEntityField": "id"
+    }
+  ],
+  "fields": [
+    {
+      "fieldId": 1,
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 2,
+      "fieldName": "balance",
+      "fieldType": "String"
+    },
+    {
+      "fieldId": 3,
+      "fieldName": "duedate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldId": 4,
+      "fieldName": "rewardPoints",
+      "fieldType": "Long"
+    },
+    {
+      "fieldId": 5,
+      "fieldName": "status",
+      "fieldType": "String"
+    }
+  ],
+  "changelogDate": "1491893070628",
+  "dto": "no",
+  "pagination": "no"
+}

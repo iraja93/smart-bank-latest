@@ -1,0 +1,41 @@
+
+<div class="panel panel-bank" ng-repeat="cc in vm.card">
+    <div class="panel-heading">
+        <h3 class="panel-title">Credit Card Details Id- {{cc.id}}</h3>
+    </div>
+    <div class="panel-body">
+        <div class="row">
+            <div>
+                <h5 class="col-md-3 col-sm-3 col-xs-3" for="name">Name:</h5>
+                <div class="col-md-9 col-sm-9 col-xs-9">
+                    <h5 id="name">{{cc.name}}</h5>
+                </div>
+            </div>
+            <div>
+                <h5 class="col-md-3 col-sm-3 col-xs-3" for="address">Balance:</h5>
+                <div class="col-md-9 col-sm-9 col-xs-9">
+                    <h5 id="address">{{cc.balance}}</h5>
+                </div>
+            </div>
+            <div>
+                <h5 class="col-md-3 col-sm-3 col-xs-3" for="city">Due date:</h5>
+                <div class="col-md-9 col-sm-9 col-xs-9">
+                    <h5 id="city">{{cc.duedate}}</h5>
+                </div>
+            </div>
+            <div>
+                <h5 class="col-md-3 col-sm-3 col-xs-3" for="state">Reward Points:</h5>
+                <div class="col-md-9 col-sm-9 col-xs-9">
+                    <h5 id="state">{{cc.rewardPoints}}</h5>
+                </div>
+            </div>
+            <div>
+                <h5 class="col-md-3 col-sm-3 col-xs-3" for="zip">Status :</h5>
+                <div class="col-md-9 col-sm-9 col-xs-9">
+                    <h5 id="zip">{{cc.status}}</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

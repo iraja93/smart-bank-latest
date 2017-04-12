@@ -1,0 +1,37 @@
+
+<div class="col-md-12">
+    <h1 class="text-center">
+      Pending Bills
+    </h1> </div>
+<div id="no-more-tables">
+    <table class="col-md-12 col-sm-12 col-xs-12 table-bordered table-striped table-condensed cf">
+        <thead class="cf">
+        <tr>
+            <th>Bill ID</th>
+            <th>Biller Name</th>
+            <th>Amount</th>
+            <th>Due Date</th>
+            <th>Card No</th>
+            <th>Details</th>
+            <th>Pay</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="bill in vm.bills">
+            <td data-title="Trans ID" ng-model="bill.id">{{bill.id}}</td>
+            <td data-title="Type" ng-model="bill.billerName">{{bill.billerName}}</td>
+            <td data-title="Amount" ng-model="bill.dueAmount">${{bill.dueAmount}}</td>
+             <td data-title="Amount" ng-model="bill.dueDate">{{bill.dueDate}}</td>
+              <td data-title="Amount" ng-model="bill.card">{{bill.card.id}}</td>
+               <td data-title="Amount" ng-model="bill.details">{{bill.details}}</td>
+           <td><button class="btn rb-btn" ng-click="vm.pay(bill.id,bill.billName,bill.dueAmount,bill.dueDate,bill.card,bill.details)">Pay</button> </td>
+        </tr>
+        </tbody>
+    </table>
+    
+    
+</div>
+<div ng-show="visiblePay" class="alert alert-success">
+  <strong>Success!</strong> Bill Payment Done.
+</div>
+

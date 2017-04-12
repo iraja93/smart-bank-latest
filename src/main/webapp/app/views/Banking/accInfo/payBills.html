@@ -1,0 +1,23 @@
+<div class="panel panel-bank">
+    <div class="panel-heading">
+        <h3 class="panel-title">Pay Bill</h3>
+    </div>
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <h5>Bill  No.</h5>
+                <!--  <input class="form-control" type="text">-->
+                <select class="form-control" ng-options="benef.id for benef in vm.bills" ng-model="benef.id"></select>
+            </div>
+            <div class="col-md-12 center-align">
+                <button type="submit" class="btn rb-btn" ng-click="vm.payBill(benef.id)">Submit</button>
+            </div>
+           
+        </div>
+    </div>
+   
+
+</div>
+ <div ng-show="visiblePay" class="alert alert-success">
+  <strong>Success!</strong> Bill Payment Done.
+</div>
